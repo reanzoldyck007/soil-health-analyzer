@@ -1,0 +1,120 @@
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.shadow-soft {
+    box-shadow:
+        0 10px 25px -5px rgba(78, 52, 46, 0.08),
+        0 8px 10px -6px rgba(78, 52, 46, 0.08);
+}
+
+.hero-gradient {
+    background: linear-gradient(to bottom, rgba(251, 249, 244, 0.4), rgba(251, 249, 244, 1));
+}
+
+.hero-gradient-tips {
+    background: linear-gradient(135deg, #316b00 0%, #245100 100%);
+}
+
+/* ── Analyzer page styles ── */
+
+.organic-shadow {
+    box-shadow: 0 4px 20px -2px rgba(78, 52, 46, 0.08);
+}
+
+.progress-ring-circle {
+    transition: stroke-dashoffset 0.35s;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+
+@keyframes pulse-custom {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50%       { opacity: 0.7; transform: scale(0.98); }
+}
+.animate-pulse-custom {
+    animation: pulse-custom 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+    animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Scanning progress bar animations */
+@keyframes scan-fill {
+    0%   { width: 0%; }
+    100% { width: 100%; }
+}
+.scan-bar-1 { animation: scan-fill 0.9s ease-out 0.1s forwards; width: 0%; }
+.scan-bar-2 { animation: scan-fill 1.4s ease-out 0.3s forwards; width: 0%; }
+.scan-bar-3 { animation: scan-fill 2.1s ease-out 0.6s forwards; width: 0%; }
+.scan-bar-4 { animation: scan-fill 2.8s ease-out 0.9s forwards; width: 0%; }
+
+/* Step indicator button */
+.step-btn {
+    transition: all 0.2s ease;
+}
+.step-btn.active {
+    background-color: #316b00;
+    color: #ffffff;
+}
+
+/* ═══════════════════════════════════════════════
+   History page styles
+   ═══════════════════════════════════════════════ */
+
+/* Card shadow — matches the existing "custom-shadow" pattern from the template */
+.history-card {
+    box-shadow: 0 4px 20px -2px rgba(78, 52, 46, 0.08);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.history-card:hover {
+    box-shadow: 0 8px 32px -4px rgba(49, 107, 0, 0.12);
+    transform: translateY(-1px);
+}
+
+/* Trend bar chart — tooltip above bar */
+.trend-bar-group:hover .trend-bar-tooltip {
+    opacity: 1;
+}
+.trend-bar-tooltip {
+    opacity: 0;
+    transition: opacity 0.15s ease;
+    pointer-events: none;
+}
+
+/* Smooth expand/collapse transition for detail panels */
+.detail-panel {
+    overflow: hidden;
+    transition: max-height 0.35s ease, opacity 0.3s ease;
+    max-height: 0;
+    opacity: 0;
+}
+.detail-panel.open {
+    max-height: 1200px;
+    opacity: 1;
+}
+
+/* User notes textarea focus ring */
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #316b00;
+}
+
+/* Empty state icon pulse */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(-8px); }
+}
+.empty-icon-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Score color helpers (used inline via PHP but can also be utility classes) */
+.score-good     { color: #316b00; }  /* primary */
+.score-fair     { color: #3f6653; }  /* secondary */
+.score-poor     { color: #ba1a1a; }  /* error */

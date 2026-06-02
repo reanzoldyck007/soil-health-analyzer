@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Soil Analysis Tips | Soil Health Analyzer</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="assets/js/tailwind.config.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="assets/css/shared.css" rel="stylesheet"/>
+</head>
+<body class="min-h-screen flex flex-col">
+
+<header class="sticky top-0 z-50 w-full bg-surface dark:bg-background shadow-sm">
+    <nav class="flex justify-between items-center w-full px-container-margin py-4 max-w-7xl mx-auto">
+        <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary text-[32px]">potted_plant</span>
+            <span class="text-headline-md font-headline-md text-primary dark:text-primary-fixed">Soil Analyzer</span>
+        </div>
+        <div class="hidden md:flex items-center gap-8">
+            <a class="text-on-surface-variant dark:text-outline-variant hover:text-primary font-body-md text-body-md transition-colors duration-200" href="index.html">Home</a>
+            <a class="text-on-surface-variant dark:text-outline-variant hover:text-primary font-body-md text-body-md transition-colors duration-200" href="analyzer.html">Analysis</a>
+            <a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md transition-colors duration-200" href="tips.html">Tips</a>
+            <a class="text-on-surface-variant dark:text-outline-variant hover:text-primary font-body-md text-body-md transition-colors duration-200" href="history.html">History</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <div class="hidden sm:flex items-center gap-2">
+                <span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">notifications</span>
+                <span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">account_circle</span>
+            </div>
+            <a href="analyzer.html" class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-md text-label-md active:scale-95 transition-all shadow-md hover:bg-on-primary-container">Upload Soil</a>
+        </div>
+    </nav>
+</header>
+
+<main class="flex-grow">
+    <section class="relative h-64 md:h-80 overflow-hidden flex items-center">
+        <div class="absolute inset-0 z-0">
+            <img class="w-full h-full object-cover brightness-[0.85]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyN7Lz4pNqNNG2dnT2IGDE_MJzQbFEFWOO8PaDTfDivExQ1Nv9tPVEOd89lgbYlW_rBFJBhdHhyEPe5x_v3VGtC1P3ki2pMQFW0INYejIWKO3On4sRlqXDcvK5osgRU38PFKyZtYTA3FCQg7gqdpL1eK6ObC0PxdR3DRbYzdpYWkjAUYc6OTzFYsIjk1aT3skdIsQdTGxc7e2kPnTagMxtZYqbPpKgj7Ml-wADLiL0hMkiQKdE6QfSIGZj8QMl9howns_JRpCqCGg" alt="Rich dark loam soil held in weathered hands"/>
+        </div>
+        <div class="relative z-10 px-container-margin max-w-7xl mx-auto w-full">
+            <h1 class="text-white font-headline-lg text-headline-lg drop-shadow-lg mb-2">Soil Analysis Tips</h1>
+            <p class="text-white/90 font-body-lg text-body-lg max-w-xl">Optimize your harvest with expert recommendations tailored for precision agriculture.</p>
+        </div>
+    </section>
+
+    <section class="px-container-margin py-section-gap max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+            <div class="bg-white p-8 rounded-[24px] shadow-soft flex flex-col gap-4 border border-surface-container">
+                <div class="w-14 h-14 rounded-2xl bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-primary-container text-3xl">photo_camera</span></div>
+                <div>
+                    <h3 class="text-headline-md font-headline-md text-primary mb-3">Capture Clear Images</h3>
+                    <ul class="space-y-3 font-body-md text-body-md text-on-surface-variant">
+                        <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-[20px] mt-0.5">check_circle</span>Use natural lighting for accurate color profiles.</li>
+                        <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-[20px] mt-0.5">check_circle</span>Avoid blurry or dark images to prevent analysis errors.</li>
+                        <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-[20px] mt-0.5">check_circle</span>Focus on soil texture to identify grain size and composition.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-[24px] shadow-soft flex flex-col gap-4 border border-surface-container">
+                <div class="w-14 h-14 rounded-2xl bg-secondary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-secondary-container text-3xl">analytics</span></div>
+                <div>
+                    <h3 class="text-headline-md font-headline-md text-primary mb-3">Understand Your Results</h3>
+                    <ul class="space-y-3 font-body-md text-body-md text-on-surface-variant">
+                        <li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">science</span>pH below 6 is acidic and may limit nutrient availability.</li>
+                        <li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">science</span>pH 6-7 is ideal for most crops and beneficial microbes.</li>
+                        <li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">science</span>Check nutrient levels for total soil fertility and health.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-[24px] shadow-soft flex flex-col gap-4 border border-surface-container">
+                <div class="w-14 h-14 rounded-2xl bg-tertiary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-tertiary-container text-3xl">sledding</span></div>
+                <div>
+                    <h3 class="text-headline-md font-headline-md text-primary mb-3">Improve Your Soil</h3>
+                    <ul class="space-y-3 font-body-md text-body-md text-on-surface-variant">
+                        <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[20px] mt-0.5">eco</span>Add compost for better organic matter and nutrients.</li>
+                        <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[20px] mt-0.5">eco</span>Use lime to reduce acidity and balance pH levels.</li>
+                        <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[20px] mt-0.5">eco</span>Maintain proper irrigation to prevent nutrient leaching.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-[24px] shadow-soft flex flex-col gap-4 border border-surface-container">
+                <div class="w-14 h-14 rounded-2xl bg-surface-container-high flex items-center justify-center"><span class="material-symbols-outlined text-on-surface text-3xl">grass</span></div>
+                <div>
+                    <h3 class="text-headline-md font-headline-md text-primary mb-3">Choose the Right Crops</h3>
+                    <ul class="space-y-3 font-body-md text-body-md text-on-surface-variant">
+                        <li class="flex items-start gap-2"><span class="material-symbols-outlined text-outline text-[20px] mt-0.5">compost</span>Select crops suitable for your specific soil type (Loam, Clay, etc).</li>
+                        <li class="flex items-start gap-2"><span class="material-symbols-outlined text-outline text-[20px] mt-0.5">compost</span>Avoid planting in poor soil conditions without prior treatment.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-[24px] shadow-soft flex flex-col gap-4 border border-surface-container lg:col-span-2">
+                <div class="flex flex-col md:flex-row gap-8 items-center">
+                    <div class="w-24 h-24 flex-shrink-0 rounded-full bg-primary/10 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-5xl">monitoring</span></div>
+                    <div class="flex-grow">
+                        <h3 class="text-headline-md font-headline-md text-primary mb-3">Monitor Regularly</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-4">Soil health is a journey, not a destination. Consistent tracking allows you to see the impact of your amendments over time.</p>
+                        <div class="flex flex-wrap gap-4">
+                            <span class="bg-surface-container-low px-4 py-2 rounded-full font-label-md text-label-md text-secondary border border-outline-variant flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">history</span>Re-analyze soil after treatment</span>
+                            <span class="bg-surface-container-low px-4 py-2 rounded-full font-label-md text-label-md text-secondary border border-outline-variant flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">timeline</span>Track changes using History</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-section-gap p-6 bg-surface-container-low rounded-xl border border-dashed border-outline-variant flex items-center justify-center gap-3">
+                <span class="material-symbols-outlined text-on-surface-variant">info</span>
+                <p class="text-on-surface-variant font-label-md text-label-md italic">Results are estimates based on AI analysis and may vary.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="w-full py-section-gap px-container-margin flex flex-col md:flex-row justify-between items-center gap-4 bg-surface-container-high dark:bg-surface-container-lowest text-secondary dark:text-secondary-fixed">
+    <div class="flex flex-col gap-2">
+        <span class="text-label-md font-label-md text-tertiary">Soil Health Analyzer</span>
+        <p class="font-label-sm text-label-sm text-on-surface-variant">© 2024 Soil Health Analyzer. Rooted in Science.</p>
+    </div>
+    <div class="flex flex-wrap justify-center gap-6 font-label-sm text-label-sm">
+        <a class="text-on-surface-variant dark:text-outline-variant hover:text-primary underline transition-all duration-300" href="#">Privacy Policy</a>
+        <a class="text-on-surface-variant dark:text-outline-variant hover:text-primary underline transition-all duration-300" href="#">Terms of Service</a>
+        <a class="text-on-surface-variant dark:text-outline-variant hover:text-primary underline transition-all duration-300" href="#">Contact Us</a>
+        <a class="text-on-surface-variant dark:text-outline-variant hover:text-primary underline transition-all duration-300" href="#">Documentation</a>
+    </div>
+    <div class="flex gap-4">
+        <span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">language</span>
+        <span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">help_outline</span>
+    </div>
+</footer>
+
+</body>
+</html>
